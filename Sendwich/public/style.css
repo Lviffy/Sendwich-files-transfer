@@ -1,0 +1,131 @@
+/* Reset some basic elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  background-image: radial-gradient(#333 1px, transparent 1px);
+  background-size: 36px 36px;
+  padding: 20px;
+  background-color: #1a1a1a; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+}
+
+h1 {
+  margin-top: 50px;
+  color: #2d7be2;
+  margin-bottom: 100px;
+}
+
+/* Button and input styles */
+button, input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  margin: 10px 0;
+  background-color: #222; /* Dark input background */
+  color: #e0e0e0;
+}
+
+#sessionInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#sessionKey {
+  background-color: #333;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* Chat container and layout */
+#chatContainer {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#chatWindow {
+  height: 300px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+/* Message controls */
+.chat-controls, .file-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.chat-controls input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+.file-controls input {
+  color: #e0e0e0;
+}
+
+/* System messages inside the chat window */
+.system-message {
+  font-style: italic;
+  color: #888;
+  margin: 5px 0;
+}
+
+/* Session input and join button layout */
+.session-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Status message */
+#status {
+  color: #bbb;
+  margin-top: 15px;
+}
+#sendFile{
+  width: 170px;
+}
+#sessionKeyInput{
+  width: 600px;
+}
