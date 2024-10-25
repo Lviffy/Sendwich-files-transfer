@@ -2,12 +2,14 @@ const express = require("express");
 const http = require("http");
 const WebSocket = require("ws");
 const crypto = require("crypto");
+const cors = require("cors");
 
 const app = express();
 const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
 app.use(express.static("public"));
+app.use(cors({origin: 'http://10.1.46.93:3000'}));
 
 const sessions = {};
 
@@ -63,7 +65,7 @@ wss.on("connection", (ws) => {
     }
   });
 });
-
-server.listen(3000, () => {
-  console.log("Server running at http://localhost:3000");
+const host = "10.1.46.93" 
+server.listen(3000,host, () => {
+  console.log("Server running at http://10.1.46.93:3000");
 });
