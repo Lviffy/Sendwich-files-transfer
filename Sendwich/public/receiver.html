@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Receiver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>File Receiver</h1>
+
+  <div class="session-controls">
+    <input type="text" id="sessionKeyInput" placeholder="Enter Session Key" />
+    <button id="joinSession">Join Session</button>
+  </div>
+
+  <div id="chatContainer">
+    <div id="chatWindow"></div>
+
+    <div class="chat-controls">
+      <input type="text" id="chatInput" placeholder="Type your message..." />
+      <button id="sendMessage">Send Message</button>
+    </div>
+
+    <div class="file-controls">
+      <div id="fileList"></div>
+    </div>
+  </div>
+
+  <div id="status"></div>
+
+  <script src="receiver.js"></script>
+</body>
+</html>

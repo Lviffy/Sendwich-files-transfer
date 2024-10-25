@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Sender</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>File Sender</h1>
+
+  <div class="session-controls">
+    <button id="createSession">Create Session</button>
+    <div id="sessionInfo" style="display: none;">
+      <span id="sessionKey"></span>
+      <button id="copySessionKey">Copy</button>
+    </div>
+  </div>
+
+  <div id="chatContainer">
+    <div id="chatWindow"></div>
+
+    <div class="chat-controls">
+      <input type="text" id="chatInput" placeholder="Type your message..." />
+      <button id="sendMessage">Send Message</button>
+    </div>
+
+    <div class="file-controls">
+      <input type="file" id="fileInput" />
+      <button id="sendFile">Send File</button>
+    </div>
+  </div>
+
+  <div id="status"></div>
+
+  <script src="sender.js"></script>
+</body>
+</html>
