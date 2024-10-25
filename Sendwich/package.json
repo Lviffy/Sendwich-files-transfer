@@ -1,0 +1,15 @@
+{
+  "name": "file-transfer",
+  "version": "1.0.0",
+  "description": "P2P File Transfer Website",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ws": "^8.2.3"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
