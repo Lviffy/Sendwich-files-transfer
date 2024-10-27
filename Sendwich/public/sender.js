@@ -1,4 +1,4 @@
-const ws = new WebSocket("ws://10.1.46.93:3000");
+const ws = new WebSocket("ws://10.1.168.59:3000");
 const createSessionButton = document.getElementById("createSession");
 const sessionInfo = document.getElementById("sessionInfo");
 const sessionKeyDisplay = document.getElementById("sessionKey");
