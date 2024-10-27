@@ -3,7 +3,7 @@ const sendFileButton = document.getElementById("sendFile");
 const status = document.getElementById("status");
 
 const peerConnection = new RTCPeerConnection();
-const ws = new WebSocket("ws://10.1.46.93:3000");
+const ws = new WebSocket("ws://10.1.168.59:3000");
 
 let dataChannel;
 
