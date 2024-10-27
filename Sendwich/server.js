@@ -65,7 +65,7 @@ wss.on("connection", (ws) => {
     }
   });
 });
-const host = "10.1.46.93" 
+const host = "10.1.168.59" 
 server.listen(3000,host, () => {
   console.log("Server running at http://10.1.168.59:3000");
 });
