@@ -1,4 +1,4 @@
-const ws = new WebSocket("ws://10.1.46.93:3000");
+const ws = new WebSocket("ws://10.1.168.59:3000");
 const sessionKeyInput = document.getElementById("sessionKeyInput");
 const joinSessionButton = document.getElementById("joinSession");
 const chatInput = document.getElementById("chatInput");
