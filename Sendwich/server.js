@@ -9,7 +9,7 @@ const server = http.createServer(app);
 const wss = new WebSocket.Server({ server });
 
 app.use(express.static("public"));
-app.use(cors({origin: 'http://10.1.46.93:3000'}));
+app.use(cors({origin: 'http://10.1.168.59:3000'}));
 
 const sessions = {};
 
@@ -67,5 +67,5 @@ wss.on("connection", (ws) => {
 });
 const host = "10.1.46.93" 
 server.listen(3000,host, () => {
-  console.log("Server running at http://10.1.46.93:3000");
+  console.log("Server running at http://10.1.168.59:3000");
 });
